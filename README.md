@@ -6,7 +6,7 @@ Website de Lobo Agencia  - Publicidad
 
 Theme based on WP Bones, with adaptation of Gulp and Bower.
 
-## Install
+## Install 
 
 1. ir a la carpeta *library*
 2. ejecutar el siguiente comando `sudo npm install`
