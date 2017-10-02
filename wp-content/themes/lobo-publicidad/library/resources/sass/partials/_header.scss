@@ -1,0 +1,56 @@
+header {
+    background: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    display: none;
+
+    nav {
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                display: inline-block;
+                margin: 5px 6px 0;
+                padding: 0;
+                list-style: none;
+
+                a {
+                    @include fonts( #000, $light, 12 );
+                    font-size: 12px;
+                    position: relative;
+
+                    &:before {
+                        content: '';
+                        background: #000;
+                        color: #000;
+                        bottom: -12px;
+                        height: 2px;
+                        position: absolute;
+                        opacity: 0;
+                        width: 100%;
+                        transition: all .2s linear;
+                    }
+
+                    &:hover {
+                        color: #000;
+                        text-decoration: none;
+
+                        &:before {
+                            opacity: 1;
+                            bottom: -5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .logo-header {
+        
+        img { width: 21px; }
+    }
+}

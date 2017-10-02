@@ -1,0 +1,292 @@
+#main {
+    #case {
+        .description {
+            text-align: right;
+            background: #fff;
+
+            .content {
+                @include fonts( #000, $book, 14 );
+                font-size: 14px;
+            }   
+
+            .title {
+                @include fonts( #000, $book, 50 );
+                font-size: 50px;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    #contact {
+        .description {
+            margin-top: 120px;
+            text-align: center;
+            width: 100%;
+
+            .summary {
+                @include fonts($light, #000, 30);
+                font-size: 30px;
+            }
+
+            .title {
+                @include fonts($black, #000, 80);
+                font-size: 80px;
+            }
+        }
+    }
+
+    #landing {
+
+        #desing {
+            margin: 180px 0 52px;
+
+            .colors {
+                margin: 145px 0 165px;
+
+                img { margin: 0 auto; }
+            }
+
+            .desing-title {
+                @include fonts( #575757, $black, 33 );
+                margin-bottom: 50px;
+                text-align: center;
+                width: 100%;
+            }
+
+            .graphy {
+                margin-bottom: 100px; 
+
+                img {
+                    margin: 0 auto 120px;
+                }
+            }
+
+            .process {
+                @include fonts( #7d7d7d, $medium, 29 );
+            }
+        }
+
+        #footer {
+            width: 100%;
+
+            .footer {
+                background-size: cover !important;
+                height: 80vh;
+                width: 100%;
+            }
+        }
+
+        #keys-visuals {
+            position: relative;
+
+            .keys-title { @include fonts( #7d7d7d, $medium, 29 ); }
+
+            .img {
+
+                img {
+
+                    width: 665px;
+                }
+            }
+
+            .left {
+                position: relative;                
+                float: left;
+                top: -200px;
+            }
+
+            .right {
+                float: right;
+            }
+        }
+
+        #keys-visuals-atl {
+            position: relative;
+
+            .img {
+                position: relative;
+                height: 920px;
+                width: 100%;
+
+                img {
+                    position: absolute;
+                    height: auto;
+                    width: 665px;
+                }
+            }
+
+            .left {
+                height: 300px;
+                transition: all .2s linear;
+
+                img {
+                    bottom: -17%;
+                    right: 0;
+                }
+            }
+
+            .right {
+                img {
+                    top: 0;
+                    z-index: 2;
+                }   
+            }
+        }
+
+        #iframe {
+            height: 800px;
+            width: 100%;
+        }
+
+        #planning {
+            margin-top: 170px;
+
+            .file {
+                width: 332px;
+
+                .file-title { @include fonts( #7d7d7d, $medium, 30 ); }
+
+                .file-description {
+                    @include fonts( #1a1818, $light, 24 );
+                    margin-top: 35px;
+                }
+            }
+
+            .scope {
+                border-left: solid #9a9a9a 1px;
+                padding: 0 50px;
+                
+                ul {
+                    margin: 0 8px;
+                    padding: 0;
+
+                    li {
+                        margin: 0;
+                    }
+                }
+            }
+
+            .planning-title {
+                @include fonts( #575757, $black, 33 );
+                margin-bottom: 74px;
+                text-align: center;
+                width: 100%;
+             }
+        }
+
+        #post {
+            margin-top: 260px;
+            margin-bottom: 120px;
+
+            .img {
+                position: relative;
+                height: 550px;
+                width: 100%;
+
+                img {
+                    position: absolute;
+                    height: auto;
+                    width: 90%;
+                }
+            }
+
+            .left {
+                height: 380px;
+
+                img {
+                    bottom: -17%;
+                }
+            }
+
+            .right {
+                img {
+                    top: 0;
+                    right: 0;
+                    z-index: 2;
+                }   
+            }
+        }
+
+        #screanshots {
+            margin-top: 120px;
+
+            .screanshots {
+                margin-bottom: 150px;
+                text-align: center;
+                width: 100%;
+
+                img {
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        #screanshots-atl {
+            margin-top: 255px;
+
+            .screanshots { margin-bottom: 140px; }
+        }
+
+        .description-case {
+            margin-top: 91px;
+
+            h1 {
+                @include fonts( #1a1818, $black, 135 );
+                margin: 0;
+                line-height: 125px;
+                text-align: center;
+
+                small { @include fonts( #1a1818, $black, 82 ); }
+            }
+
+            .description {
+                @include fonts( #1a1818, $light, 23 );
+                margin-top: 91px;
+                letter-spacing: 1px;
+                line-height: 37px;
+                text-align: justify;
+                width: 100%;
+            }
+
+            .subtitle {
+                @include fonts( #575757, $light, 40 );
+                margin-top: 5px;
+                text-align: center;
+            }
+        }
+
+        .header {
+            position: relative;
+
+            .bg-header {
+                background-size: cover !important;
+                height: 100vh;
+                width: 100%;
+            }
+
+            .ico-arrow {
+                bottom: 21px;
+                cursor: pointer;
+                text-align: center;
+                position: absolute;
+                width: 100%;
+
+                img {
+                    position: relative;
+                    width: 32px;
+                    animation: arrow .5s alternate infinite ease-in;
+                }
+
+                @keyframes arrow {
+                    0% {
+                        top: 0px;
+                    }
+                    100% {
+                        top: 8px;
+                    }
+                }
+
+            }
+        }
+    }
+}
